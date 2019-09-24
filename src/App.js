@@ -18,8 +18,8 @@ class App extends Component {
     return (
       <Router>
         <Security
-          issuer="https://dev-409495.oktapreview.com/oauth2/default"
-          client_id="0oafhkg1yupTnPW9z0h7"
+          issuer="https://dev-123456.oktapreview.com/oauth2/default"
+          client_id="012some345client6789id"
           redirect_uri={window.location.origin + '/implicit/callback'}
           onAuthRequired={onAuthRequired}
         >
@@ -31,7 +31,7 @@ class App extends Component {
               <Route
                 path="/login"
                 render={() => (
-                  <Login baseUrl="https://dev-409495.oktapreview.com" />
+                  <Login baseUrl="https://dev-123456.oktapreview.com" />
                 )}
               />
               <Route path="/implicit/callback" component={ImplicitCallback} />
